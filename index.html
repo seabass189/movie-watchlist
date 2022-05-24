@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/f7093940a9.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Search</title>
+    </head>
+    <body>
+        <div class="box">
+            <nav class="row header">
+                <div class="header-top">
+                    <h1>Find your film</h1>
+                    <a href="watchlist.html" class="header-btn grow">My Watchlist</a>
+                </div>
+                
+            </nav>
+            <form id="search-form">
+                <input id="search-bar" placeholder="Search for a movie">
+                <input id="search-btn" type="submit" value="Search">
+            </form>
+            <main class="row results">
+                <div id="movies-list">
+                    <!-- <div class="movie">
+                        <div class="column">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTA4NTYyMTcwNTFeQTJeQWpwZ15BbWU4MDI0NTg0MDkx._V1_SX300.jpg"
+                                alt="Poster for Free State of Jones">
+                        </div>
+                        <div class="column">
+                            <div class="movie-top">
+                                <h2>Free State of Jones</h2>
+                                <span>6.9 <i class="fa-solid fa-star star"></i></span>
+                            </div>
+                    
+                            <span class="movie-info">139 min</span>
+                            <span class="movie-info">Action, Biography, Drama</span>
+                            <button class="movie-btn" id="watch-tt1124037">
+                                <i class="fas fa-circle-plus"></i> Watchlist
+                            </button>
+                            <button class="movie-btn hide" id="remove-tt1124037">
+                                <i class="fas fa-circle-minus"></i> Remove
+                            </button>
+                            <p>A disillusioned Confederate army deserter returns to Mississippi and leads a militia of fellow deserters and
+                                women in an uprising against the corrupt local Confederate government.</p>
+                        </div>
+                    </div> -->
+                </div>
+            
+                <div id="results-placeholder">
+                    <i class="fa-solid fa-film fa-3x"></i>
+                    <p>Start exploring</p>
+                </div>
+                <div id="results-message" class="hide">
+                    <p>Unable to find what you're searching for. Please try another search.</p>
+                </div>
+            </main>
+        </div>
+        
+        <script type="module" src="index.js"></script>
+        <!-- <script type="module" src="utils.js"></script> -->
+    </body>
+</html>
