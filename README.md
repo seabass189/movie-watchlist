@@ -6,3 +6,9 @@ The search page allows a user to search for a movie by title. There is a maximum
 The watchlist page allows a user to view and edit their watchlist. Movies can be removed from this page using the "Remove" button. The watchlist is stored on the local browser storage.
 
 This application was written using Javascript, HTML and CSS.
+
+
+## Use Visual Studio Code with the "Live Server" extension to run the web application
+Extension: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Tutorial: https://youtu.be/y4qqQeUDCBQ?t=53
