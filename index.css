@@ -26,7 +26,6 @@ img {
 
 nav {
     background-color: #303130;
-    /* color: #fff; */
     padding: 4em 2em;
     background-image: url("img/movie-watchlist.png");
     background-position: center 23%;
@@ -113,7 +112,6 @@ a:hover,a:active {
 }
 
 .movie {
-    /* color: #fff; */
     display: flex;
     border-bottom: #2C2C2C solid 1px;
     padding: 2em 0;
@@ -161,20 +159,6 @@ a:hover,a:active {
     color: #303130;
 }
 
-.movie-img-placeholder {
-    display: flex;
-    background-color: #272727;
-    color: #3b3b3b;
-    /* width: 100%;
-    height: 80%; */
-    /* align-items: center; */
-}
-
-#placeholder-img {
-    margin: auto;
-    padding: 1em .5em;
-}
-
 #results-placeholder {
     color: #2E2E2F;
     text-align: center;
@@ -188,15 +172,13 @@ a:hover,a:active {
 }
 
 #arrows {
-    /* border: yellow solid 3px; */
     display: flex;
     width: 12em;
     justify-content: space-between;
 }
 
 .arrow {
-    /* border: red solid 1px; */
-    padding: .3em 0;
+    padding: .4em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,6 +187,11 @@ a:hover,a:active {
 
 #current-page {
     padding: 0 1em;
+    font-size: 1.2em;
+}
+
+.darken {
+    filter: brightness(40%)
 }
 
 .hide {

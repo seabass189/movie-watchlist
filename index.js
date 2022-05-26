@@ -1,4 +1,4 @@
-import { getFullMovieList, getIdFromBtnId, getImgPlaceholderHtml } from './utils.js';
+import { getFullMovieList, getIdFromBtnId, imgError } from './utils.js';
 
 const searchForm = document.getElementById('search-form')
 const searchBar = document.getElementById('search-bar')
@@ -19,7 +19,6 @@ let currentPageVal = 1
 let maxPages = 0
 
 searchForm.addEventListener('submit', (e) => {
-    // alert('Search btn pressed')
     e.preventDefault()
     currentPageVal = 1
     maxPages = 0
@@ -179,10 +178,6 @@ function removeFromWatchlist(event) {
 
     event.currentTarget.classList.add('hide')
     document.getElementById('watch-' + id).classList.remove('hide')
-}
-
-function imgError($event) {
-    $event.target.src = 'img/placeholder.png'
 }
 
 first.addEventListener('click', () => {

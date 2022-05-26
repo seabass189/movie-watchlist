@@ -15,12 +15,11 @@ function getIdFromBtnId(btnId) {
     return btnId.substr(index + 1)
 }
 
-function getImgPlaceholderHtml() {
-    return `
-    <div class="movie-img-placeholder">
-        <i class="fa-solid fa-film fa-3x" id="placeholder-img"></i>
-    </div>
-    `
+function imgError($event) {
+    $event.target.src = 'img/placeholder.png'
+    $event.target.classList = 'darken'
+
 }
 
-export { getFullMovieList, getIdFromBtnId, getImgPlaceholderHtml }
+
+export { getFullMovieList, getIdFromBtnId, imgError }

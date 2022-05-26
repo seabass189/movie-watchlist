@@ -1,4 +1,4 @@
-import { getFullMovieList, getIdFromBtnId, getImgPlaceholderHtml } from './utils.js';
+import { getFullMovieList, getIdFromBtnId, imgError } from './utils.js';
 
 const resultsListDiv = document.getElementById('movies-list')
 const message = document.getElementById('results-message')
@@ -23,7 +23,7 @@ async function loadWatchlist() {
     }).join('')
     resultsListDiv.innerHTML = html
 
-    watchList.map(id => addBtnListener(id))
+    watchList.map(id => addListeners(id))
 }
 
 function hideMessage(hide) {
@@ -36,7 +36,7 @@ function getMovieHTML(movie) {
     return `
     <div class="movie" id="movie-${movie.imdbID}">
         <div class="column">
-            <img src="${movie.Poster}" alt="Poster for ${movie.Title}">
+            <img id="img-${movie.imdbID}" src="${movie.Poster}" alt="Poster for ${movie.Title}">
         </div>
         <div class="column">
             <div class="movie-top">
@@ -55,9 +55,12 @@ function getMovieHTML(movie) {
     `
 }
 
-function addBtnListener(id) {
+function addListeners(id) {
     const removeBtn = document.getElementById('remove-' + id)
     removeBtn.addEventListener('click', removeFromWatchlist)
+
+    const img = document.getElementById('img-' + id)
+    img.addEventListener('error', imgError)
 }
 
 function removeFromWatchlist(event) {
