@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     background-color: #1c1c1c;
     font-family: 'Inter', sans-serif;
+    color: #fff;
 }
 
 img {
@@ -25,9 +26,9 @@ img {
 
 nav {
     background-color: #303130;
-    color: #fff;
+    /* color: #fff; */
     padding: 4em 2em;
-    background-image: url("https://images.unsplash.com/photo-1628432136678-43ff9be34064?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2NhcmZhY2V8ZW58MHx8MHx8&w=1000&q=80");
+    background-image: url("img/movie-watchlist.png");
     background-position: center 23%;
     background-repeat: no-repeat;
     background-size: 130%;
@@ -112,7 +113,7 @@ a:hover,a:active {
 }
 
 .movie {
-    color: #fff;
+    /* color: #fff; */
     display: flex;
     border-bottom: #2C2C2C solid 1px;
     padding: 2em 0;
@@ -124,7 +125,7 @@ a:hover,a:active {
 
 .movie:last-child {
     border: none;
-    padding: 2em 0 0;
+    padding: 2em 0;
 }
 
 .column:first-child {
@@ -149,7 +150,7 @@ a:hover,a:active {
     margin-right: 1.5em;
 }
 
-.movie-btn {
+.btn {
     border: none;
     color: #fff;
     background-color: #121212;
@@ -158,6 +159,20 @@ a:hover,a:active {
 
 .movie-btn:active {
     color: #303130;
+}
+
+.movie-img-placeholder {
+    display: flex;
+    background-color: #272727;
+    color: #3b3b3b;
+    /* width: 100%;
+    height: 80%; */
+    /* align-items: center; */
+}
+
+#placeholder-img {
+    margin: auto;
+    padding: 1em .5em;
 }
 
 #results-placeholder {
@@ -172,8 +187,32 @@ a:hover,a:active {
     margin: auto;
 }
 
+#arrows {
+    /* border: yellow solid 3px; */
+    display: flex;
+    width: 12em;
+    justify-content: space-between;
+}
+
+.arrow {
+    /* border: red solid 1px; */
+    padding: .3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 2em;
+}
+
+#current-page {
+    padding: 0 1em;
+}
+
 .hide {
-    display: none;
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
 }
 
 @media (max-width: 910px) {

@@ -15,4 +15,12 @@ function getIdFromBtnId(btnId) {
     return btnId.substr(index + 1)
 }
 
-export {getFullMovieList, getIdFromBtnId}
+function getImgPlaceholderHtml() {
+    return `
+    <div class="movie-img-placeholder">
+        <i class="fa-solid fa-film fa-3x" id="placeholder-img"></i>
+    </div>
+    `
+}
+
+export { getFullMovieList, getIdFromBtnId, getImgPlaceholderHtml }

@@ -1,4 +1,4 @@
-import { getFullMovieList, getIdFromBtnId } from './utils.js';
+import { getFullMovieList, getIdFromBtnId, getImgPlaceholderHtml } from './utils.js';
 
 const resultsListDiv = document.getElementById('movies-list')
 const message = document.getElementById('results-message')
@@ -46,7 +46,7 @@ function getMovieHTML(movie) {
 
             <span class="movie-info">${movie.Runtime}</span>
             <span class="movie-info">${movie.Genre}</span>
-            <button class="movie-btn" id="remove-${movie.imdbID}">
+            <button class="btn" id="remove-${movie.imdbID}">
                 <i class="fas fa-circle-minus"></i> Remove
             </button>
             <p>${movie.Plot}</p>
