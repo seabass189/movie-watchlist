@@ -1,5 +1,5 @@
 # Movie Watchlist
-This is web application that uses the Open Movie Database API to search for movies that can be added to a local watchlist.
+This is a web application that uses the Open Movie Database API to search for movies that can be added to a local watchlist.
 
 The search page allows a user to search for a movie by title. 10 results are loaded and arrows at the bottom of the page allow a user to navigate to the first, previous, next and last pages. The search is powered by the Open Movie Database API. Movies on this page can be added and removed from the watchlist.
 
