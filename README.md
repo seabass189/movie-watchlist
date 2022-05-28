@@ -12,3 +12,4 @@ This application was written using JavaScript, HTML and CSS.
 Extension: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 Tutorial: https://youtu.be/y4qqQeUDCBQ?t=53
+
