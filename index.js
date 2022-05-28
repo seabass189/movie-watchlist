@@ -12,7 +12,7 @@ const next = document.getElementById('nextBtn')
 const arrows = document.getElementById('arrows')
 const currentPage = document.getElementById('current-page')
 
-const watchList = JSON.parse(localStorage.getItem('watchlist'))
+let watchList = JSON.parse(localStorage.getItem('watchlist'))
 if (!watchList) watchList = []
 
 let currentPageVal = 1
